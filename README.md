@@ -33,7 +33,6 @@ Siga as instruções abaixo para executar o projeto em seu ambiente local:
 3. **Instale as dependências:**
 
    ```
-   node --version
    npm install -g @angular/cli
   
    ```

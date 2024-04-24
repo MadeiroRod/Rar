@@ -1,10 +1,10 @@
-🎉 **Bem-vindo ao {RaR}** 🚀
+🎉 **Bem-vindo ao RaR ** 🚀
 
 Este projeto é um exemplo interativo para demonstrar o uso de tecnologias incríveis! Aqui você encontrará informações sobre o projeto, as ferramentas utilizadas e instruções sobre como executá-lo em seu ambiente local.
 
 ## ℹ️ Sobre o Projeto
 
-O {RaR}é uma aplicação web simples que permite aos usuários criar usuários, cadastrar produtos, clientes e criar ordens de serviços. Foi desenvolvido com as seguintes tecnologias:
+O RaR é uma aplicação web simples que permite aos usuários criar usuários, cadastrar produtos, clientes e criar ordens de serviços. Foi desenvolvido com as seguintes tecnologias:
 
 - Linguagem: JavaScript / Node / Java 
 - Framework: Angular / SpringBoot

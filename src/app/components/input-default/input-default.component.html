@@ -1,1 +1,8 @@
-<p>input-default works!</p>
+<div class="input-wrapper">
+  <input
+  [type]="type"
+  [placeholder]="placeholder"
+  [value]="value"
+  (input)="onInput($event)"
+/>
+</div>

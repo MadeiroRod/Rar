@@ -19,15 +19,17 @@ main {
         gap: 8px;
         flex-grow: 1;
         background-color: $gray-bg;
+      img.logo-header{
+        position: absolute;
+        margin: 28px;
+        top: 0;
+        left: 0;
+      }
     }
 
     .form-section {
         flex-grow: 0.3;
         padding: 0 45px;
-
-        img {
-            margin-bottom: 30px;
-        }
 
         h2 {
             font-size: 30px;
@@ -51,12 +53,25 @@ main {
                 background: transparent;
                 padding: 12px 24px;
                 cursor: pointer;
+                margin-bottom: 18px;
 
                 &.btn-primary {
                     background-color: $primary--color;
                     color: white;
                 }
+                &:disabled{
+                  opacity: 0.7;
+                }
 
+            }
+            span {
+              font-size: 14px;
+              color: $slate-500;
+
+              &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+              }
             }
         }
 

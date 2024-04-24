@@ -2,8 +2,31 @@
   title="Boas-vindas"
   subTitle="Preencha os campos abaixo para continuar"
   btnText="Entrar na conta"
+  btnTextLabel="Não possui uma conta?"
+  btnTextStrong="Cadastre-se"
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disabledBtnText]="!loginForm.valid"
 >
-<form action="">
-  <p>Oiii</p>
-</form>
+  <form [formGroup]="loginForm">
+    <app-input-default
+      formControlName="email"
+      inputName="email"
+      type="email"
+      placeholder="Email"
+    >
+    </app-input-default>
+
+    <app-input-default
+      formControlName="password"
+      inputName="password"
+      type="password"
+      placeholder="Password"
+    >
+    </app-input-default>
+    <span>
+      Esqueceu a senha?
+    </span>
+  </form>
+
 </app-default-login-page>

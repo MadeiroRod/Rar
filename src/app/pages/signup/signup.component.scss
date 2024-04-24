@@ -4,12 +4,21 @@ form {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 78px;
+  margin-bottom: 16px;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
 
-  span {
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+
+  label span {
     font-size: 14px;
     color: $slate-500;
-    text-align: end;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
@@ -17,3 +26,9 @@ form {
     }
   }
 }
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+@import "../../../styles/variables.scss";
+
+input {
+  width: 100%;
+  border: 1px solid $slate-300;
+  border-radius: 8px;
+  background-color: #ffffff;
+
+
+  font-size: 14px;
+  padding: 8px 0 8px 12px;
+  &::placeholder{
+    color: $slate-400;
+  }
+}

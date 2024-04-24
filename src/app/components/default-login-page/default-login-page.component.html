@@ -8,6 +8,11 @@
     <h2>{{ title }}</h2>
     <h3>{{ subTitle }}</h3>
     <ng-content></ng-content>
-    <button class="btn-primary"> {{ btnText }}</button>
+    <button
+      class="btn-primary"
+      (click)="submit()"
+      [disabled]="disabledBtnText"
+     > {{ btnText }}</button>
+    <span (click)="navigate()"> {{ btnTextLabel }} <strong> {{ btnTextStrong }} </strong></span>
   </section>
 </main>

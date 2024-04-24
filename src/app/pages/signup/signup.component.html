@@ -1,0 +1,53 @@
+<app-default-login-page
+  title="Boas-vindas"
+  subTitle="Insira as informações no campo abaixo para prosseguir com a criação da conta"
+  btnText="Criar conta"
+  btnTextLabel="Já possui uma conta?"
+  btnTextStrong="Faça login."
+  (submit)="submit()"
+  (navigate)="navigate()"
+  [disabledBtnText]="!signupForm.valid"
+>
+  <form [formGroup]="signupForm">
+    <app-input-default
+      formControlName="name"
+      inputName="name"
+      type="text"
+      placeholder="Nome completo"
+    >
+    </app-input-default>
+    <app-input-default
+      formControlName="email"
+      inputName="email"
+      type="email"
+      placeholder="Email"
+    >
+    </app-input-default>
+
+    <app-input-default
+      formControlName="password"
+      inputName="password"
+      type="password"
+      placeholder="Senha"
+    >
+    </app-input-default>
+    <app-input-default
+      formControlName="passwordConfirm"
+      inputName="passwordConfirm"
+      type="password"
+      placeholder="Confirmar senha"
+    >
+    </app-input-default>
+    <div class="checkbox-wrapper">
+      <input type="checkbox" id="aceita-termos" name="aceita-termos">
+      <label for="">
+        <span>
+          Ao criar sua conta você concorda com nossos Termos e Condições.
+        </span>
+      </label>
+    </div>
+
+  </form>
+
+</app-default-login-page>
+
